@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-<!-- Google Tag Manager -->
+	<!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PZJC8JM');</script>
+})(window,document,'script','dataLayer','GTM-TLHW7LJ');</script>
 <!-- End Google Tag Manager -->
 	
     <!-- Required meta tags -->
@@ -65,69 +65,55 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             });
         });
   
-	    
-
-
-    
-	  dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+     dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
-  event: "purchase",
-	
-	affiliation:"online_course",
-  ecommerce: {
-      transaction_id: "T_12345",
-      value: 25.42,
-      tax: 4.90,
-      shipping: 5.99,
-      currency: "INR",
-  
-       items: [
-	    {
-		    item_id: "ITM_01",
-	      item_name: "Python",
-	      discount: 11.1,
-	      index: 0,
-	      price: 2000,
-	      quantity: 1
-	    },
-		    {
-			    item_id: "ITM_02",
-			    item_name: "Web Analytics",
-			    discount: 12.4,
-			    index: 1,
-			    price: 2500,
-			    quantity: 1
-		    }
-	    ]
-  }
-});
-	    
-	    dataLayer.push({
- event: "add_to_cart",
+  event: "view_iten_list_event",
   ecommerce: {
     items: [
     {
-      item_id: "ITM_01",
+      item_id: "ITM_12345",
       item_name: "Python",
-      discount: 11.1,
-      index: 0,
-      price: 2000,
+      affiliation: "online_course",
+      currency: "INR",
+      discount: 100,
+      item_brand: "MOOC",
+      item_category: "Python",
+      item_category2: "ML",
+      item_category3: "DS",
+      item_category4: "CS",
+      item_variant: "Online",
+      location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
+      price: 5000,
       quantity: 1
-    },
-	    {
-		    item_id: "ITM_02",
-		    item_name: "Web Analytics",
-		    discount: 12.4,
-		    index: 1,
-		    price: 2500,
-		    quantity: 1
-
-
-	    }
+    }
     ]
   }
 });
 	    
+	    dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+dataLayer.push({
+  event: "add_to_cart",
+  ecommerce: {
+    items: [
+    {
+      item_id: "ITM_12345",
+      item_name: "Python",
+      affiliation: "online_course",
+      currency: "INR",
+      discount: 100,
+      item_brand: "MOOC",
+      item_category: "Python",
+      item_category2: "ML",
+      item_category3: "DS",
+      item_category4: "CS",
+      item_variant: "Online",
+      location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
+      price: 5000,
+      quantity: 1
+    }
+    ]
+  }
+});
 	</script>
 
     <title>Contact Page</title>
@@ -135,7 +121,7 @@ dataLayer.push({
 
 <body>
 	<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PZJC8JM"
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TLHW7LJ"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 	
@@ -173,31 +159,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 &emsp;  &emsp;  <img src="img/1.jpg" width="500" height="200">
 </p>
 
-&emsp;  &emsp;  &emsp;  &emsp; <a href="purchase.html" id="btncart12" style="font: bold 24px Arial; color:red;">Add-to-cart</a></button> &emsp;  &emsp;
-	    <button id="btnpurchase" onclick ="dataLayer.push({
-  event: "purchase",
+&emsp;  &emsp;  &emsp;  &emsp;  <button id="btncart1" onclick="dataLayer.push({
+  event: "add_to_cart",
   ecommerce: {
-      transaction_id: "TID_12345",
+    items: [
+    {
+      item_id: "ITM_12345",
+      item_name: "Python",
       affiliation: "online_course",
-      value: 25.41,
-      tax: 4.90,
-      shipping: 5.91,
       currency: "INR",
-      items: [
-       {
-        item_id: "ITM_12345",
-        item_name: "Python",
-       
-        item_brand: "MOOC",
-        item_category: "Python",
-        item_category2: "ML",
-        
-        price: 5000,
-        quantity: 1
-      }]
+      discount: 100,
+      item_brand: "MOOC",
+      item_category: "Python",
+      item_category2: "ML",
+      item_category3: "DS",
+      item_category4: "CS",
+      item_variant: "Online",
+      location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
+      price: 5000,
+      quantity: 1
+	
+	
+    }
+    ]
   }
-});
-<button type="button" style="font: bold 24px  Arial; color:green;"><a href="sucess.html">Purchase</a></button><br />
+});" ><a href="cart.html" id="btncart12" style="font: bold 24px Arial; color:red;">Add-to-cart</a></button> &emsp;  &emsp;  			 
+<button type="button" style="font: bold 24px  Arial; color:green;"><a href="success.html">Purchase</a></button><br />
 </br></br>
 <p>
 &emsp;  &emsp;  <img src="img/2.jfif" width="500" height="200">
